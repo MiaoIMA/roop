@@ -22,6 +22,7 @@ def get_face_swapper() -> Any:
         if FACE_SWAPPER is None:
             model_path = resolve_relative_path('../inswapper_128.onnx')
             FACE_SWAPPER = insightface.model_zoo.get_model(model_path, providers=roop.globals.execution_providers)
+            print("inswapper_128.onnx import")  
     return FACE_SWAPPER
 
 

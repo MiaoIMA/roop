@@ -70,7 +70,6 @@ def process_frame(source_face: Face, temp_frame: Frame) -> Frame:
     return temp_frame
 
 
-
 def process_frames(source_path: str, temp_frame_paths: List[str], update: Callable[[], None]) -> None:
     source_face = get_one_face(cv2.imread(source_path))
     for temp_frame_path in temp_frame_paths:

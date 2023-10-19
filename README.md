@@ -1,19 +1,3 @@
-# Based9Based version of ROOP, No NSFW Filter, No ERRORS ;)
-Google Colab Link: [Click here](https://basedbased.blogspot.com/2023/08/google-colab-for-deepfake-face-swapping.html)
-
-# Roop
-
-> Take a video and replace the face in it with a face of your choice. You only need one image of the desired face. No dataset, no training.
-
-[![Build Status](https://img.shields.io/github/actions/workflow/status/s0md3v/roop/ci.yml.svg?branch=main)](https://github.com/s0md3v/roop/actions?query=workflow:ci)
-
-## Installation
-
-Be aware, the installation needs technical skills and is not for beginners. Please do not open platform and installation related issues on GitHub. We have a very helpful.
-
-[Basic](https://github.com/s0md3v/roop/wiki/1.-Installation) - It is more likely to work on your computer, but will be quite slow
-
-[Acceleration](https://github.com/s0md3v/roop/wiki/2.-Acceleration) - Unleash the full potential of your CPU and GPU
 
 
 ## Usage
@@ -26,6 +10,7 @@ python run.py [options]
 -h, --help                                                                 show this help message and exit
 -s SOURCE_PATH, --source SOURCE_PATH                                       select an source image
 -t TARGET_PATH, --target TARGET_PATH                                       select an target image or video
+-r reference_face_path,--reference reference_face_path                     select an reference image
 -o OUTPUT_PATH, --output OUTPUT_PATH                                       select output file or directory
 --frame-processor FRAME_PROCESSOR [FRAME_PROCESSOR ...]                    frame processors (choices: face_swapper, face_enhancer, ...)
 --keep-fps                                                                 keep target fps
@@ -51,26 +36,6 @@ python run.py [options]
 Using the `-s/--source`, `-t/--target` and `-o/--output` argument will run the program in headless mode.
 
 
-## Disclaimer
+## Reference
 
-This software is designed to contribute positively to the AI-generated media industry, assisting artists with tasks like character animation and models for clothing.
-
-We are aware of the potential ethical issues and have implemented measures to prevent the software from being used for inappropriate content, such as nudity.
-
-Users are expected to follow local laws and use the software responsibly. If using real faces, get consent and clearly label deepfakes when sharing. The developers aren't liable for user actions.
-
-
-## Licenses
-
-Our software uses a lot of third party libraries as well pre-trained models. The users should keep in mind that these third party components have their own license and terms, therefore our license is not being applied.
-
-
-## Credits
-
-- [deepinsight](https://github.com/deepinsight) for their [insightface](https://github.com/deepinsight/insightface) project which provided a well-made library and models.
-- all developers behind the libraries used in this project
-
-
-## Documentation
-
-Read the [documentation](https://github.com/s0md3v/roop/wiki) for a deep dive.
+https://github.com/based9based/roop
